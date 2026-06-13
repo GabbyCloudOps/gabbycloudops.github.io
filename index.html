@@ -3,7 +3,7 @@
 <html>
 
 <head>
-    <title>GabbyCloudOps Portfolio</title>
+    <title>GabbyCloudOps | Cloud Engineer Portfolio</title>
 
     <style>
         body {
@@ -12,125 +12,144 @@
             margin: auto;
             padding: 20px;
             line-height: 1.6;
+            background-color: #f9f9f9;
         }
 
-        nav {
-            margin-bottom: 20px;
+        header {
+            text-align: center;
+            padding: 30px 0;
         }
 
         nav a {
-            text-decoration: none;
             margin-right: 15px;
+            text-decoration: none;
+            font-weight: bold;
+            color: #1f4b99;
+        }
+
+        .section {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.08);
         }
 
         .project {
-            border: 1px solid #ddd;
-            padding: 15px;
+            border-left: 4px solid #1f4b99;
+            padding: 10px 15px;
             margin-bottom: 15px;
-            border-radius: 8px;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #e6f0ff;
+            padding: 3px 8px;
+            border-radius: 5px;
+            margin-right: 5px;
+            font-size: 12px;
+        }
+
+        a.button {
+            display: inline-block;
+            margin-top: 5px;
+            color: white;
+            background: #1f4b99;
+            padding: 6px 10px;
+            border-radius: 5px;
+            text-decoration: none;
         }
     </style>
 </head>
 
 <body>
 
+<header>
+    <h1>GabbyCloudOps ☁️</h1>
+    <p>Aspiring Cloud & DevOps Engineer | AWS • Networking • Automation</p>
+
     <nav>
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
+        <a href="#aws">Cloud</a>
+        <a href="#networking">Networking</a>
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
     </nav>
+</header>
 
-    <h1>GabbyCloudOps ☁️</h1>
-    <h2>Aspiring Cloud & DevOps Engineer</h2>
-
+<div class="section" id="about">
+    <h2>About Me</h2>
     <p>
-        Building cloud infrastructure, automation solutions,
-        and networking skills through hands-on projects.
+        I am building hands-on experience in cloud engineering with a focus on AWS, Linux systems,
+        networking fundamentals, and automation. I learn by building real projects and documenting my work
+        like a cloud engineer would in production environments.
     </p>
-
-    <hr>
-
-    <h2 id="about">About Me</h2>
-
-    <p>
-        I am an aspiring Cloud & DevOps Engineer focused on AWS,
-        Linux, networking, and automation. My goal is to build
-        scalable and reliable infrastructure while developing
-        real-world technical skills through hands-on projects.
-    </p>
-
-    <h2 id="projects">Projects</h2>
-
-<div class="project">
-    <h3>AWS Linux Web Server</h3>
-    <p>Deployed and configured a Linux web server using AWS EC2.</p>
-    <a href="https://github.com/gabbycloudops/aws-linux-web-server" target="_blank">
-        View Project →
-    </a>
 </div>
 
-<div class="project">
-    <h3>Cloud Automation Scripts</h3>
-    <p>Built Bash scripts for system monitoring and automation.</p>
-    <a href="https://github.com/gabbycloudops/cloud-automation-scripts" target="_blank">
-        View Project →
-    </a>
+<div class="section" id="projects">
+    <h2>Projects</h2>
+
+    <div class="project">
+        <strong>AWS Linux Web Server</strong><br>
+        Deployed EC2 Linux server and learned cloud networking fundamentals.<br>
+        <span class="tag">AWS</span>
+        <span class="tag">EC2</span>
+        <a class="button" href="https://github.com/gabbycloudops/aws-linux-web-server" target="_blank">View</a>
+    </div>
+
+    <div class="project">
+        <strong>Cloud Automation Scripts</strong><br>
+        Built Bash scripts for system monitoring and automation.<br>
+        <span class="tag">Linux</span>
+        <span class="tag">Automation</span>
+        <a class="button" href="https://github.com/gabbycloudops/cloud-automation-scripts" target="_blank">View</a>
+    </div>
 </div>
 
-<div class="project">
-    <h3>Network Troubleshooting Lab</h3>
-    <p>Documenting ping and traceroute networking diagnostics.</p>
-    <a href="https://github.com/gabbycloudops/network-troubleshooting-lab" target="_blank">
-        View Project →
-    </a>
-</div>
-
-<h2 id="aws">AWS Cloud Understanding</h2>
-
-<div class="project">
-    <h3>Cloud Networking & EC2</h3>
-    <p>
-        Learned how AWS EC2 works, including networking flow, security groups, and how cloud servers respond to traffic.
-    </p>
-
-    <a href="https://github.com/gabbycloudops/aws-linux-web-server" target="_blank">
-        View AWS Project →
-    </a>
-</div>
-
-<h2 id="skills">Skills</h2>
-
-<div class="project">
-    <h3>Linux Web Server on AWS EC2</h3>
-    <p>
-        Deployed a Linux web server using AWS EC2 and learned how cloud networking and security groups control access.
-    </p>
-
-    <a href="https://github.com/gabbycloudops/aws-linux-web-server" target="_blank">
-        View AWS Project →
-    </a>
-</div>
-
-    <h2 id="skills">Skills</h2>
-
-    <ul>
-        <li>AWS Cloud Fundamentals</li>
-        <li>Linux Administration</li>
-        <li>Bash Scripting</li>
-        <li>Networking Fundamentals</li>
-        <li>Git & GitHub</li>
-    </ul>
-
-    <h2 id="contact">Contact</h2>
+<div class="section" id="aws">
+    <h2>Cloud Engineering Focus</h2>
 
     <p>
-        GitHub: GabbyCloudOps<br>
-        TryHackMe: GabbyCloudOps
+        Experience working with AWS EC2 and understanding how cloud infrastructure operates,
+        including networking flow, security groups, and server deployment.
     </p>
+</div>
+
+<div class="section" id="networking">
+    <h2>Networking Labs</h2>
+
+    <div class="project">
+        <strong>Ping Connectivity Test</strong><br>
+        Tested connectivity and analyzed latency (~31ms) and packet loss.<br>
+        <a class="button" href="https://github.com/gabbycloudops/network-troubleshooting-lab" target="_blank">View</a>
+    </div>
+
+    <div class="project">
+        <strong>Traceroute Analysis</strong><br>
+        Traced 13-hop network path to understand internet routing behavior.<br>
+        <a class="button" href="https://github.com/gabbycloudops/network-troubleshooting-lab" target="_blank">View</a>
+    </div>
+</div>
+
+<div class="section" id="skills">
+    <h2>Skills</h2>
+
+    <span class="tag">AWS Basics</span>
+    <span class="tag">Linux</span>
+    <span class="tag">Networking</span>
+    <span class="tag">Bash</span>
+    <span class="tag">GitHub</span>
+</div>
+
+<div class="section" id="contact">
+    <h2>Contact</h2>
+
+    <p>
+        GitHub: gabbycloudops<br>
+        TryHackMe: gabbycloudops
+    </p>
+</div>
 
 </body>
-
-    </html>
-
 </html>
