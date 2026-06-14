@@ -5,20 +5,18 @@
 <head>
     <title>GabbyCloudOps | Cloud Engineer Portfolio</title>
 
-    <style>
-      body {
+   body {
     font-family: Arial, sans-serif;
     max-width: 1000px;
     margin: auto;
     padding: 20px;
     line-height: 1.6;
+    color: #e2e8f0;
 
-    color: #e5e7eb;
-
-   background: url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1950&q=80");
-background-size: cover;
-background-attachment: fixed;
-background-position: center;
+    background:
+        radial-gradient(circle at top left, rgba(59,130,246,0.25), transparent 40%),
+        radial-gradient(circle at bottom right, rgba(139,92,246,0.25), transparent 40%),
+        #0f172a;
 }
 
         header {
@@ -34,13 +32,12 @@ background-position: center;
         }
 
      .section {
-    background: rgba(15, 23, 42, 0.75);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255,255,255,0.1);
+    background: rgba(30,41,59,0.75);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(59,130,246,0.2);
+    border-radius: 12px;
     padding: 20px;
-    margin-top: 20px;
     margin-bottom: 20px;
-    border-radius: 10px;
 }
 
         .project {
@@ -51,11 +48,12 @@ background-position: center;
 }
 .tag {
     display: inline-block;
-    background: #e6f0ff;
-    padding: 3px 8px;
-    border-radius: 5px;
-    margin-right: 5px;
-    font-size: 12px;
+    background: rgba(59,130,246,0.15);
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 6px;
+    margin: 5px;
+    border: 1px solid rgba(139,92,246,0.4);
 }
 
 a {
@@ -81,17 +79,13 @@ p {
 
        a.button {
     display: inline-block;
-    margin-top: 8px;
     padding: 8px 14px;
-    background: #2563eb;
-    color: #ffffff !important;
-    border-radius: 6px;
+    background: linear-gradient(90deg,#3b82f6,#8b5cf6);
+    color: white !important;
+    border-radius: 8px;
     text-decoration: none;
     font-weight: bold;
-    border: 1px solid rgba(255,255,255,0.15);
-    transition: 0.2s ease;
 }
-
 a.button:hover {
     background: #3b82f6;
     transform: translateY(-1px);
