@@ -1,2 +1,2 @@
 # gabbycloudsec.github.io
-Personal portfolio website for Cloud &amp; DevOps engineering projects
+Personal cybersecurity portfolio showcasing hands-on projects in cloud security, Linux, networking, and SOC-related labs.
