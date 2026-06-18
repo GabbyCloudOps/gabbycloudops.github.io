@@ -5,14 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GabbyCloudSec | Cloud Security Engineer Portfolio</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<div class="grid-bg"></div>
 
 <header>
-    <h1 class="hero-title">Gabriell Bedoy </h1>
+    <h1 class="hero-title">GabbyCloudSec</h1>
+
+<p class="real-name">
+    Gabriell Bedoy
+</p>
 
     <p class="subtitle">
         Aspiring Cloud Security Engineer building hands-on experience in AWS, Linux, Python, networking, and automation.
@@ -51,12 +61,24 @@
 
 
 
-<div class="section" id="skills">
-    <h2>Skills</h2>
+<div class="skills-grid">
 
-    <p>
-        AWS • IAM • EC2 • S3 • VPC • Linux • Python • Bash • Networking • Git • GitHub • VS Code • Cloud Security
-    </p>
+<div class="skill-card">AWS</div>
+<div class="skill-card">IAM</div>
+<div class="skill-card">EC2</div>
+<div class="skill-card">S3</div>
+<div class="skill-card">VPC</div>
+
+<div class="skill-card">Linux</div>
+<div class="skill-card">Python</div>
+<div class="skill-card">Bash</div>
+<div class="skill-card">Networking</div>
+
+<div class="skill-card">Git</div>
+<div class="skill-card">GitHub</div>
+<div class="skill-card">VS Code</div>
+<div class="skill-card">Cloud Security</div>
+
 </div>
 
 
@@ -65,13 +87,20 @@
 
     <div class="project">
         <h3>Linux Notes</h3>
-        <p>
-            Linux administration and security fundamentals including file permissions,
-            users and groups, process management, networking, and Bash commands.
-        </p>
-        <a href="https://github.com/GabbyCloudSec/linux-notes" target="_blank">
-            View Repository →
-        </a>
+       <p>
+Linux administration and security fundamentals including file permissions,
+users and groups, process management, networking, and Bash commands.
+</p>
+
+<div class="tech-stack">
+    <span>Linux</span>
+    <span>Bash</span>
+    <span>Networking</span>
+</div>
+
+<a href="https://github.com/GabbyCloudSec/linux-notes" target="_blank">
+    View Repository →
+</a>
     </div>
 
     <div class="project">
@@ -80,6 +109,13 @@
             AWS cloud security concepts, IAM, EC2, S3, VPC, CloudTrail, and
             shared responsibility model notes.
         </p>
+       
+        <div class="tech-stack">
+    <span>AWS</span>
+    <span>IAM</span>
+    <span>CloudTrail</span>
+</div>
+        
         <a href="https://github.com/GabbyCloudSec/cloud-security-notes" target="_blank">
             View Repository →
         </a>
@@ -91,6 +127,13 @@
             Hands-on AWS security labs covering IAM configuration, EC2 hardening,
             S3 security, VPC security, and CloudTrail monitoring.
         </p>
+       
+        <div class="tech-stack">
+    <span>AWS</span>
+    <span>EC2</span>
+    <span>S3</span>
+</div>
+        
         <a href="https://github.com/GabbyCloudSec/aws-security-labs" target="_blank">
             View Repository →
         </a>
@@ -102,6 +145,13 @@
             Python-based automation and security tools including scripts for
             information gathering and security-related tasks.
         </p>
+       <div class="tech-stack">
+    <span>Python</span>
+    <span>Automation</span>
+    <span>Security</span>
+</div>
+        
+        
         <a href="https://github.com/GabbyCloudSec/python-security-tools" target="_blank">
             View Repository →
         </a>
@@ -113,14 +163,39 @@
 <div class="section" id="certs">
     <h2>Certifications & Training</h2>
 
-    <ul>
-        <li>ISC2 Candidate</li>
-        <li>TryHackMe – Pre Security Path Completed</li>
-        <li>Cisco Networking Academy – Cybersecurity Fundamentals</li>
-        <li>AWS Certified Cloud Practitioner – In Progress</li>
-        <li>Hands-On Linux Administration & Bash Scripting</li>
-        <li>Cloud Security & AWS Lab Development</li>
-    </ul>
+    <div class="cert-grid">
+
+<div class="cert-card">
+<h3>ISC2 Candidate</h3>
+<p>Active</p>
+</div>
+
+<div class="cert-card">
+<h3>AWS Cloud Practitioner</h3>
+<p>In Progress</p>
+</div>
+
+<div class="cert-card">
+<h3>TryHackMe Pre Security</h3>
+<p>Completed</p>
+</div>
+
+<div class="cert-card">
+<h3>Cisco Cybersecurity Fundamentals</h3>
+<p>Completed</p>
+</div>
+
+<div class="cert-card">
+<h3>Linux Administration & Bash</h3>
+<p>Hands-On Training</p>
+</div>
+
+<div class="cert-card">
+<h3>AWS Security Labs</h3>
+<p>Lab Development</p>
+</div>
+
+</div>
 </div>
 
 
@@ -143,26 +218,44 @@
 </div>
 
 
-<div class="section" id="contact">
-    <h2>Contact</h2>
+<div class="contact-grid">
 
-    <p>Email: gabbycloudsec@protonmail.com</p>
+<a class="contact-card"
+href="mailto:gabbycloudsec@protonmail.com">
 
-    <p>
-        <a href="mailto:gabbycloudsec@protonmail.com">
-            Send Email
-        </a>
-    </p>
+Email
 
-    <p>
-        <a href="https://github.com/GabbyCloudSec" target="_blank">
-            GitHub Profile
-        </a>
-    </p>
+</a>
+
+
+<a class="contact-card"
+href="https://github.com/GabbyCloudSec"
+target="_blank">
+
+GitHub
+
+</a>
+
+
+<a class="contact-card"
+href="#">
+
+Resume
+
+</a>
+
 </div>
 
 <footer>
-    <p>© 2026 Gabriell Bedoy | Cloud Security Portfolio</p>
+
+    <p>© 2026 Gabriell Bedoy</p>
+
+    <p class="footer-subtitle">
+
+        Cloud Security Engineer • AWS • Linux • Python
+
+    </p>
+
 </footer>
 
 </body>
