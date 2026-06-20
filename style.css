@@ -1,4 +1,5 @@
 /* ===== GLOBAL ===== */
+
 *{
     margin:0;
     padding:0;
@@ -11,37 +12,31 @@ html{
 
 body{
     font-family:'Segoe UI',sans-serif;
-    background:linear-gradient(180deg,#08111f,#101d38);
+    background:#08111f;
     color:#E8F1FF;
     line-height:1.8;
 }
 
-/* ===== SECTION ===== */
-section{
-    width:90%;
-    max-width:1200px;
-    margin:40px auto;
-}
+/* ===== NAVIGATION ===== */
 
-/* ===== NAVBAR ===== */
 nav{
     position:fixed;
     top:0;
     width:100%;
-    padding:20px 8%;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    background:rgba(8,17,31,.8);
+    padding:20px 8%;
+    background:rgba(8,17,31,.85);
     backdrop-filter:blur(15px);
-    z-index:1000;
     border-bottom:1px solid rgba(34,211,238,.15);
+    z-index:1000;
 }
 
 .logo{
-    font-size:1.6rem;
-    font-weight:700;
     color:#22d3ee;
+    font-size:1.5rem;
+    font-weight:700;
 }
 
 nav ul{
@@ -51,8 +46,8 @@ nav ul{
 }
 
 nav a{
-    text-decoration:none;
     color:white;
+    text-decoration:none;
     transition:.3s;
 }
 
@@ -61,13 +56,27 @@ nav a:hover{
 }
 
 /* ===== HERO ===== */
+
 .hero{
     min-height:100vh;
     display:flex;
-    flex-direction:column;
     justify-content:center;
     align-items:center;
     text-align:center;
+    padding:120px 10%;
+    position:relative;
+
+    background:
+    linear-gradient(rgba(8,17,31,.85),
+    rgba(8,17,31,.92)),
+    url("assets/cloud-security.jpg");
+
+    background-size:cover;
+    background-position:center;
+}
+
+.hero-content{
+    max-width:800px;
 }
 
 .hero h1{
@@ -77,23 +86,22 @@ nav a:hover{
 }
 
 .hero p{
-    max-width:700px;
     font-size:1.1rem;
-    color:#d9e5ff;
+    margin-bottom:35px;
+    color:#dbeafe;
 }
 
-.hero-buttons{
-    margin-top:35px;
-}
+/* ===== BUTTONS ===== */
 
 .btn,
 .btn-outline{
+    display:inline-block;
     text-decoration:none;
     padding:14px 28px;
     border-radius:12px;
-    margin:0 10px;
-    transition:.3s;
     font-weight:600;
+    margin:10px;
+    transition:.3s;
 }
 
 .btn{
@@ -102,7 +110,7 @@ nav a:hover{
 }
 
 .btn:hover{
-    box-shadow:0 0 25px rgba(34,211,238,.5);
+    box-shadow:0 0 20px rgba(34,211,238,.4);
 }
 
 .btn-outline{
@@ -115,15 +123,24 @@ nav a:hover{
     color:#08111f;
 }
 
-/* ===== GLASS PANEL ===== */
+/* ===== SECTIONS ===== */
+
+section{
+    width:90%;
+    max-width:1200px;
+    margin:50px auto;
+}
+
+/* ===== GLASS PANELS ===== */
+
 .glass-panel{
     background:rgba(16,29,56,.75);
-    border:1px solid rgba(34,211,238,.15);
+    border:1px solid rgba(34,211,238,.12);
     border-radius:20px;
-    padding:40px;
+    padding:45px;
     backdrop-filter:blur(18px);
+
     box-shadow:
-    0 0 20px rgba(34,211,238,.08),
     0 10px 30px rgba(0,0,0,.4);
 }
 
@@ -138,20 +155,23 @@ h3{
 }
 
 /* ===== SKILLS ===== */
+
 .skills-grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
     gap:25px;
 }
 
 /* ===== PROJECTS ===== */
+
 .project-grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
     gap:25px;
 }
 
-/* ===== CERTS ===== */
+/* ===== CERTIFICATIONS ===== */
+
 .cert-grid{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
@@ -159,42 +179,44 @@ h3{
 }
 
 /* ===== CARDS ===== */
+
 .skill-card,
 .project-card,
 .cert-card{
-    background:rgba(255,255,255,.04);
+    background:rgba(255,255,255,.03);
     border:1px solid rgba(34,211,238,.12);
     border-radius:18px;
     padding:25px;
-    transition:.35s ease;
+    transition:.3s;
 }
 
 .skill-card:hover,
 .project-card:hover,
 .cert-card:hover{
     transform:translateY(-6px);
-    box-shadow:0 0 25px rgba(34,211,238,.18);
-    border-color:#22d3ee;
-}
 
-/* ===== SMALL BUTTON ===== */
-.btn-small{
-    display:inline-block;
-    margin-top:20px;
-    text-decoration:none;
-    background:#22d3ee;
-    color:#08111f;
-    padding:10px 18px;
-    border-radius:10px;
-    font-weight:600;
+    border-color:#22d3ee;
+
+    box-shadow:
+    0 0 25px rgba(34,211,238,.15);
 }
 
 /* ===== CONTACT ===== */
+
 #contact{
     text-align:center;
 }
 
+/* ===== FOOTER ===== */
+
+footer{
+    text-align:center;
+    padding:40px;
+    color:#94a3b8;
+}
+
 /* ===== MOBILE ===== */
+
 @media(max-width:768px){
 
     nav{
@@ -203,15 +225,18 @@ h3{
     }
 
     nav ul{
-        gap:20px;
+        gap:18px;
+        flex-wrap:wrap;
+        justify-content:center;
     }
 
     .hero h1{
-        font-size:2.7rem;
+        font-size:2.8rem;
     }
 
     .hero{
-        padding-top:120px;
+        padding-top:160px;
     }
 
 }
+
