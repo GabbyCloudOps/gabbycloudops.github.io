@@ -1,7 +1,7 @@
 :root {
     --text-primary: #e2e8f0;
     --text-secondary: #94a3b8;
-    --accent: #22d3ee;
+    --accent: #33b8d6;
     --bg-glass: rgba(15,23,42,.45);
 }
 
@@ -42,7 +42,7 @@ body::before{
     left:-200px;
     width:500px;
     height:500px;
-    background:rgba(34,211,238,.08);
+    background:rgba(228, 232, 233, 0.08);
     filter:blur(150px);
     z-index:-1;
 }
@@ -150,18 +150,17 @@ nav a:hover{
     color: var(--text-primary);
 }
 
-.section p {
-    color: var(--text-secondary);
+.section h2 {
+    color: #ffffff;
+    margin-bottom: 18px;
+    letter-spacing: 1px;
 }
 
 .section h3 {
-    color: #dbeafe;
+    color: rgba(255,255,255,0.9);
 }
 
-h2{
-    color:white;
-    margin-bottom:20px;
-}
+
 
 .project{
     background:rgba(2,6,23,.55);
@@ -173,7 +172,7 @@ h2{
 }
 
 .project:hover{
-    border-color:#22d3ee;
+    border-color:#369faf;
     box-shadow:0 0 30px rgba(34,211,238,.15);
 }
 
@@ -213,7 +212,7 @@ h2{
 
 .skill-card:hover,
 .contact-card:hover{
-    border-color:#22d3ee;
+    border-color:#e8eeef;
     box-shadow:0 0 30px rgba(34,211,238,.15);
 }
 
