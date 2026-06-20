@@ -261,15 +261,13 @@ h3{
 
 .skill-card:hover,
 .project-card:hover,
-.cert-card:hover{
-    transform:translateY(-6px);
-
-    border-color:#22d3ee;
-
+.cert-card:hover {
+    transform: translateY(-6px);
+    border-color: #22d3ee;
     box-shadow:
-0 0 30px rgba(34,211,238,.2),
-0 15px 40px rgba(0,0,0,.3);
-
+        0 0 30px rgba(34,211,238,.2),
+        0 15px 40px rgba(0,0,0,.3);
+}
 /* ===== CONTACT ===== */
 
 #contact{
@@ -380,4 +378,18 @@ body {
 .hero-content {
     max-width: 800px;
     width: 100%;
+}
+
+    @media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero h2 {
+        font-size: 1.2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
 }
