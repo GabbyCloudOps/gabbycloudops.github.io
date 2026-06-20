@@ -17,6 +17,25 @@ body{
     line-height:1.8;
 }
 
+body::before{
+    content:"";
+    position:fixed;
+
+    width:700px;
+    height:700px;
+
+    border-radius:50%;
+
+    background:rgba(34,211,238,.05);
+
+    filter:blur(180px);
+
+    top:-200px;
+    right:-150px;
+
+    z-index:-1;
+}
+
 /* ===== NAVIGATION ===== */
 
 nav{
@@ -90,9 +109,6 @@ nav a:hover{
     z-index:-1;
 }
 
-.hero-content{
-    max-width:800px;
-}
 
 .hero h1{
     font-size:4rem;
@@ -105,17 +121,15 @@ nav a:hover{
 
 .hero-content{
     max-width:850px;
-
     background:rgba(8,17,31,.35);
-
     border:1px solid rgba(34,211,238,.12);
-
     backdrop-filter:blur(18px);
-
     padding:60px;
-
     border-radius:30px;
-} 
+
+    box-shadow:
+        0 20px 50px rgba(0,0,0,.45);
+}
 
 .hero p{
     font-size:1.15rem;
@@ -247,8 +261,8 @@ h3{
 .cert-card{
     background:rgba(255,255,255,.03);
     border:1px solid rgba(34,211,238,.12);
-    border-radius:18px;
-    padding:25px;
+    border-radius:24px;
+    padding:35px;
     transition:.3s;
 }
 
@@ -260,8 +274,8 @@ h3{
     border-color:#22d3ee;
 
     box-shadow:
-    0 0 25px rgba(34,211,238,.15);
-}
+0 0 30px rgba(34,211,238,.2),
+0 15px 40px rgba(0,0,0,.3);
 
 /* ===== CONTACT ===== */
 
@@ -292,9 +306,9 @@ footer{
         justify-content:center;
     }
 
-    .hero h1{
-        font-size:2.8rem;
-    }
+ .hero h1{
+    font-size:2.8rem;
+}
 
     .hero{
         padding-top:160px;
