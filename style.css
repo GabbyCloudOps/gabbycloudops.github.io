@@ -11,7 +11,7 @@ html{
 }
 
 body{
-    font-family:'Segoe UI',sans-serif;
+    font-family:'Inter',sans-serif;
     background:#08111f;
     color:#E8F1FF;
     line-height:1.8;
@@ -165,27 +165,52 @@ nav a:hover{
 section{
     width:90%;
     max-width:1200px;
-    margin:50px auto;
+    margin:80px auto;
 }
 
 /* ===== GLASS PANELS ===== */
 
 .glass-panel{
-    background:rgba(16,29,56,.75);
-    border:1px solid rgba(34,211,238,.12);
-    border-radius:20px;
-    padding:45px;
-    backdrop-filter:blur(18px);
+    background:rgba(15,23,42,.78);
+
+    border:1px solid rgba(34,211,238,.10);
+
+    border-radius:28px;
+
+    padding:60px;
+
+    backdrop-filter:blur(20px);
 
     box-shadow:
-        0 10px 30px rgba(0,0,0,.4);
+        0 15px 40px rgba(0,0,0,.4);
 }
 
 h2{
     color:#22d3ee;
-    margin-bottom:25px;
+    font-size:2rem;
+    font-weight:700;
+    margin-bottom:40px;
+    position:relative;
+    display:inline-block;
 }
 
+h2::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-12px;
+
+    width:90px;
+    height:4px;
+
+    border-radius:10px;
+
+    background:linear-gradient(
+        90deg,
+        #22d3ee,
+        transparent
+    );
+}
 h3{
     color:#22d3ee;
     margin-bottom:15px;
