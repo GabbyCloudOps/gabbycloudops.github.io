@@ -525,7 +525,96 @@ p { color: var(--ink-dim); margin: 0 0 1em; }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .earth, .earth-scan, .orbit-sat, .status-dot, .earth-node, .earth-grid, .earth-landmasses {
+  .earth, .earth-scan, .orbit-sat, .status-dot, .earth-node, .earth-grid, .earth-landmasses, .scroll-cue span {
     animation: none !important;
   }
 }
+
+/* ---------- Scroll cue ---------- */
+.scroll-cue {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+.scroll-cue span {
+  width: 9px;
+  height: 9px;
+  border-right: 1.5px solid var(--ink-faint);
+  border-bottom: 1.5px solid var(--ink-faint);
+  transform: rotate(45deg);
+  animation: scroll-bounce 2s ease-in-out infinite;
+}
+@keyframes scroll-bounce {
+  0%, 100% { transform: rotate(45deg) translate(0, 0); opacity: 0.4; }
+  50% { transform: rotate(45deg) translate(4px, 4px); opacity: 0.9; }
+}
+
+/* ---------- Count blocks (Cisco stats) ---------- */
+.count-row {
+  display: flex;
+  gap: 1.5rem;
+  margin: 0.8rem 0;
+}
+.count-block {
+  display: flex;
+  flex-direction: column;
+}
+.count-num {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--amber);
+  line-height: 1;
+}
+.count-label {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--ink-faint);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* ---------- Skill dot indicators ---------- */
+.skill-card ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dots {
+  position: relative;
+  display: inline-block;
+  width: 42px;
+  height: 6px;
+  flex-shrink: 0;
+  margin-left: 0.75rem;
+  background-image: radial-gradient(circle, var(--line) 1.5px, transparent 1.6px);
+  background-size: 9px 6px;
+  background-repeat: repeat-x;
+  background-position: left center;
+}
+.dots::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, var(--cyan) 1.5px, transparent 1.6px);
+  background-size: 9px 6px;
+  background-repeat: repeat-x;
+  background-position: left center;
+  -webkit-mask-image: linear-gradient(to right, black calc(var(--fill, 60%)), transparent 0);
+  mask-image: linear-gradient(to right, black calc(var(--fill, 60%)), transparent 0);
+}
+.dots[data-level="1"] { --fill: 20%; }
+.dots[data-level="2"] { --fill: 40%; }
+.dots[data-level="3"] { --fill: 60%; }
+.dots[data-level="4"] { --fill: 80%; }
+.dots[data-level="5"] { --fill: 100%; }
+
+/* ---------- Category-colored project borders ---------- */
+.project-card {
+  border-left: 3px solid var(--line);
+}
+.project-card[data-cat="aws"]    { border-left-color: var(--amber); }
+.project-card[data-cat="python"] { border-left-color: var(--cyan); }
+.project-card[data-cat="windows"]{ border-left-color: #6ea8d8; }
+.project-card[data-cat="linux"]  { border-left-color: var(--earth-land-2); }
+.project-card[data-cat="cloud"]  { border-left-color: #c084e8; }
