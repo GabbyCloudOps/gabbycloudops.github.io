@@ -7,11 +7,11 @@ progress toward becoming a cloud security engineer.
 
 ## About
 
-I bring a background in healthcare operations into cybersecurity — where protecting
-sensitive data and keeping systems running under strict standards isn't optional.
-I'm currently an **ISC2 Candidate**, working through hands-on rooms and badges on
-**TryHackMe** and coursework through **Cisco Networking Academy**, with a long-term
-goal of working in cloud security.
+Healthcare showed me what's truly at stake when sensitive systems and data
+aren't protected — that urgency drives everything I build here. My goal is to
+become a cloud security engineer who designs and defends real infrastructure.
+I'm earning that future through hands-on labs and structured certifications,
+with real progress already on the board.
 
 ## What's in this repo
 
@@ -20,6 +20,7 @@ goal of working in cloud security.
 | `index.html` | Live portfolio site (hero, about, skills, projects, training, contact) |
 | `style.css` | Site styling — dark "mission control" theme with an animated Earth hero |
 | `index-backup.html` | Backup snapshot of the current site |
+| `favicon.svg` | Browser tab icon |
 | `assets/` | Images and static assets used by the site |
 
 ## Focus Areas
@@ -31,11 +32,12 @@ goal of working in cloud security.
 
 ## Training & Credentials
 
-- ISC2 Candidate
-- AWS Cloud Practitioner *(in progress)*
-- TryHackMe — Pre Security Learning Path *(completed, 19h 10m hands-on)*
-- Cisco Networking Academy — 7 courses completed, 5 badges earned, incl. verified
+- ISC2 Candidate &middot; studying for CompTIA Security+
+- **TryHackMe**: 71 rooms completed, 13 badges earned, Top 8% rank, 21-day streak
+  — including a completed Pre Security Learning Path, now working through Cyber 101
+- **Cisco Networking Academy**: 7 courses completed, 5 badges earned, incl. verified
   Introduction to Cybersecurity certificate
+- AWS Cloud Practitioner *(in progress)*
 
 ## Contact
 
