@@ -33,8 +33,9 @@ with real progress already on the board.
 ## Training & Credentials
 
 - ISC2 Candidate &middot; studying for CompTIA Security+
-- **TryHackMe**: 71 rooms completed, 13 badges earned, Top 8% rank, 21-day streak
-  — including a completed Pre Security Learning Path, now working through Cyber 101
+- **TryHackMe**: 77 rooms completed, 14 badges earned, Capability Score 34
+  ("Junior Security Professional" tier), Top 7% rank, 21-day streak — including a completed Pre
+  Security Learning Path, now working through Cyber 101
 - **Cisco Networking Academy**: 7 courses completed, 5 badges earned, incl. verified
   Introduction to Cybersecurity certificate
 - AWS Cloud Practitioner *(in progress)*
