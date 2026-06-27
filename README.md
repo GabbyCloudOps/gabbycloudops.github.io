@@ -1,50 +1,78 @@
-# GabbyCloudSec | Cloud Security Portfolio
+# 🌐 GabbyCloudSec Portfolio
 
-Personal portfolio site for **Gabriell Bedoy** — built and maintained to track my
-progress toward becoming a cloud security engineer.
+Cloud Security & SOC Analyst portfolio site for **Gabriell Bedoy**, built to document hands-on cybersecurity labs, cloud security practice, and technical growth.
 
-🔗 **Live site:** [gabbycloudsec.github.io](https://gabbycloudsec.github.io)
-
-## About
-
-Healthcare showed me what's truly at stake when sensitive systems and data
-aren't protected — that urgency drives everything I build here. My goal is to
-become a cloud security engineer who designs and defends real infrastructure.
-I'm earning that future through hands-on labs and structured certifications,
-with real progress already on the board.
-
-## What's in this repo
-
-| File | Purpose |
-|---|---|
-| `index.html` | Live portfolio site (hero, about, skills, projects, training, contact) |
-| `style.css` | Site styling — dark "mission control" theme with an animated Earth hero |
-| `index-backup.html` | Backup snapshot of the current site |
-| `favicon.svg` | Browser tab icon |
-| `assets/` | Images and static assets used by the site |
-
-## Focus Areas
-
-- **Cloud Security** — AWS IAM, EC2 hardening, S3, VPC, CloudTrail
-- **Security Operations** — SIEM fundamentals, threat detection, log analysis
-- **Systems** — Linux, Windows Security, Active Directory
-- **Automation** — Python, Bash, Git
-
-## Training & Credentials
-
-- Studying for CompTIA Security+
-- **TryHackMe**: 77 rooms completed, 14 badges earned, Capability Score 34
-  ("Junior Security Professional" tier), Top 7% rank, 21-day streak — including a completed Pre
-  Security Learning Path, now working through Cyber 101
-- **Cisco Networking Academy**: 7 courses completed, 5 badges earned, incl. verified
-  Introduction to Cybersecurity certificate
-- AWS Cloud Practitioner *(in progress)*
-
-## Contact
-
-- Email: [GabbyCloudSec@protonmail.com](mailto:GabbyCloudSec@protonmail.com)
-- GitHub: [github.com/GabbyCloudSec](https://github.com/GabbyCloudSec)
+🔗 **Live Site:** https://gabbycloudsec.github.io
 
 ---
-*This README describes the portfolio site itself. Individual lab write-ups and
-scripts live in their own repos, linked from the Projects section of the site.*
+
+## 🎯 Purpose of This Portfolio
+
+This site is a living record of my transition into cybersecurity, focused on:
+
+- Cloud security fundamentals (AWS IAM, logging, infrastructure basics)
+- SOC-style thinking (monitoring, investigation, threat awareness)
+- Hands-on labs and technical documentation
+- Continuous skill development through real practice
+
+---
+
+## 🧱 Site Structure
+
+The portfolio is designed as a simple, responsive single-page site with the following sections:
+
+- **Hero Section** – introduction and career focus
+- **About** – background and transition into cybersecurity
+- **Skills** – cloud, SOC, Linux, Windows, scripting
+- **Projects** – hands-on labs and investigations
+- **Training** – certifications and learning platforms
+- **Contact** – ways to connect
+
+---
+
+## ☁️ Focus Areas
+
+- AWS Cloud Security (IAM, S3, CloudTrail, EC2, VPC)
+- Security Operations (log analysis, threat detection, incident response basics)
+- Linux & Windows security fundamentals
+- Active Directory concepts
+- Basic automation (Python, Bash, Git)
+
+---
+
+## 🧪 Hands-On Work Highlighted
+
+- AWS Security Labs (IAM misconfiguration scenarios)
+- SOC-style investigation case studies
+- Linux security practice and system hardening notes
+- Windows/Active Directory security fundamentals
+
+---
+
+## 🛠️ Tech Stack
+
+- HTML5
+- CSS3 (custom dark “mission control” theme)
+- Git & GitHub Pages
+- Static site hosting
+
+---
+
+## 📈 Training & Progress
+
+- TryHackMe: 77+ rooms, Top 7%, Cyber 101 in progress
+- Cisco Networking Academy: 7 courses completed
+- AWS Cloud Practitioner: in progress
+- CompTIA Security+: in progress
+
+---
+
+## 📫 Links
+
+- 🌐 Live Portfolio: https://gabbycloudsec.github.io
+- 🧑‍💻 GitHub: https://github.com/GabbyCloudSec
+- 📧 Email: GabbyCloudSec@protonmail.com
+
+---
+
+⭐ This project is actively maintained as part of my cybersecurity career development.
